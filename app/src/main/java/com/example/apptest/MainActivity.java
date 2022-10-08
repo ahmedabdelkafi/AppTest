@@ -16,9 +16,10 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 //1ere Etape: DECLARATION
     private Button next ;
-    private EditText malek ;
+    private EditText password ;
+    private EditText username ;
     private ImageView pass ;
-    private TextView signup ;
+    private TextView register ;
 
 
 
@@ -31,13 +32,13 @@ public class MainActivity extends AppCompatActivity {
 
     //2eme Etape: IDENTIFICATION
         next = findViewById(R.id.button);
-        malek = findViewById(R.id.editTextTextPersonName);
+        password = findViewById(R.id.editTextTextPassword3);
         pass = findViewById(R.id.imageView3);
-        signup = findViewById(R.id.textView8);
+        register = findViewById(R.id.textView8);
 
 
         //recuperer text de l edittext
-        a = malek.getText().toString();
+        a = password.getText().toString();
 
 
         View.OnClickListener l = new View.OnClickListener()
@@ -47,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             {
                 //action to do
                 //Dans put Extra (tag,valeur)
-                Intent i = new Intent(getApplicationContext(), MainActivity2.class).putExtra("aaa",malek.getText().toString());
+                Intent i = new Intent(getApplicationContext(), MainActivity2.class).putExtra("aaa",password.getText().toString());
                 startActivity(i);
 
             }
@@ -66,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         };
-        signup.setOnClickListener(e);
+        register.setOnClickListener(e);
 
 
         View.OnClickListener p = new View.OnClickListener()
@@ -74,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                Toast.makeText(getApplicationContext(), malek.getText().toString(), LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), password.getText().toString(), LENGTH_LONG).show();
 
             }
         };

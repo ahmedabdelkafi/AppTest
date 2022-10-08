@@ -9,24 +9,22 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class Welcome1 extends AppCompatActivity {
-    private ImageView welcome1img ;
+public class Welcome2 extends AppCompatActivity {
+    private ImageView welcome2img ;
     private Button next ;
     private TextView text1 ;
     private TextView text2 ;
     private Button skip ;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_welcome1);
-
-        welcome1img = findViewById(R.id.imageView4);
-        next = findViewById(R.id.button5);
-        text1 = findViewById(R.id.textView10);
-        text2 = findViewById(R.id.textView11);
-        skip = findViewById(R.id.button4);
-
-
+        setContentView(R.layout.activity_welcome2);
+        welcome2img = findViewById(R.id.imageView5);
+        next = findViewById(R.id.button3);
+        text1 = findViewById(R.id.textView9);
+        text2 = findViewById(R.id.textView15);
+        skip = findViewById(R.id.button7);
 
 
         View.OnClickListener e = new View.OnClickListener()
@@ -35,7 +33,7 @@ public class Welcome1 extends AppCompatActivity {
             public void onClick(View v)
             {
 
-                Intent i = new Intent(getApplicationContext(), Welcome2.class);
+                Intent i = new Intent(getApplicationContext(), Welcome3.class);
                 startActivity(i);
 
             }
