@@ -14,7 +14,9 @@ public class Categories extends AppCompatActivity {
         setContentView(R.layout.activity_categories);
 
         home = findViewById(R.id.homecat);
-
+       /*
+       hello
+        */
 
 
 
