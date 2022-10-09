@@ -15,7 +15,7 @@ public class Categories extends AppCompatActivity {
 
         home = findViewById(R.id.homecat);
        /*
-       hello
+       hello ghofi from ahmed
         */
 ////////////////////////////
 
