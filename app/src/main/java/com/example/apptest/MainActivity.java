@@ -77,8 +77,15 @@ public class MainActivity extends AppCompatActivity {
             }
         };
         register.setOnClickListener(e);
+        View.OnClickListener b = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), MainActivity2.class);
+                startActivity(i);
 
-
+            }
+        };
+        next.setOnClickListener(b);
 
         rememberme.setOnClickListener(new View.OnClickListener() {
             @Override
